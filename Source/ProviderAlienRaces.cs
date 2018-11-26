@@ -53,16 +53,16 @@ namespace AlienFaces
             AlienRace result = new AlienRace();
 
             // Get the list of body types.
-            List<BodyType> alienbodytypes = alienPartGenerator.alienbodytypes;
+            List<BodyTypeDef> alienbodytypes = alienPartGenerator.alienbodytypes;
             if (alienbodytypes == null)
             {
                 return null;
             }
 
-            List<BodyType> bodyTypes = new List<BodyType>();
+            List<BodyTypeDef> bodyTypes = new List<BodyTypeDef>();
             if (alienbodytypes.Count > 0)
             {
-                foreach (BodyType o in alienbodytypes)
+                foreach (BodyTypeDef o in alienbodytypes)
                 {
                     bodyTypes.Add(o);
                 }

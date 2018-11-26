@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using RimWorld;
 using UnityEngine;
-
+using Verse;
 namespace AlienFaces
 {
     public class AlienRace
@@ -26,7 +26,7 @@ namespace AlienFaces
         {
             get; set;
         }
-        public List<BodyType> BodyTypes
+        public List<BodyTypeDef> BodyTypes
         {
             get; set;
         }

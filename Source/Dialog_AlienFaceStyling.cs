@@ -513,7 +513,7 @@ namespace AlienFaces
         public override void DrawUI(Rect rect)
         {
             GUI.BeginGroup(rect);
-            string  pawnName = Pawn.NameStringShort;
+            string  pawnName = Pawn.Name.ToStringShort;
             Vector2 vector   = Text.CalcSize(pawnName);
 
             Rect pawnRect  = AddPortraitWidget(0f, TitleHeight);
